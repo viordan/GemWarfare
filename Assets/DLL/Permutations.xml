@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Permutations</name>
+    </assembly>
+    <members>
+        <member name="T:Permutations.Utilities.Core">
+            <summary>
+            for implementation:
+            using Permutations.Utilities;
+            
+            Core permutationsUtilitiesCore;
+            permutationsUtilitiesCore = new Core();
+            permutationsUtilitiesCore = gameObject.AddComponent() (The component type is Core;
+            </summary>
+        </member>
+        <member name="M:Permutations.Utilities.Core.GetRandomKey(System.Int32)">
+            <summary>
+            get a random array from 0 to _arraysize
+            </summary>
+            <param name="_arraysize"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Permutations.Utilities.Core.MoveTrasformToLocation(UnityEngine.Transform,UnityEngine.Transform,System.Single)">
+            <summary>
+             Move and Rotate from one location to another over _duration (1f=1second)
+            </summary>
+            <param name="_whatToMove"></param>
+            <param name="_whereToMove"></param>
+            <param name="_duration"></param>
+        </member>
+        <member name="M:Permutations.Utilities.Core.MoveTrasformToLocation(UnityEngine.Transform,UnityEngine.Transform)">
+            <summary>
+            Move and Rotate from one location to another over 1 second.
+            </summary>
+            <param name="_whatToMove"></param>
+            <param name="_whereToMove"></param>
+        </member>
+        <member name="M:Permutations.Utilities.Core.ParentToChild(UnityEngine.Transform,UnityEngine.Transform)">
+            <summary>
+            Specify the Parent and Child that you wish to invert the relationship to. 
+            </summary>
+            <param name="_parent"></param>
+            <param name="_child"></param>
+        </member>
+        <member name="M:Permutations.Utilities.Core.MoveTransform(UnityEngine.Transform,UnityEngine.Vector3,UnityEngine.Vector3,System.Single,System.Single)">
+            <summary>
+            You must specify whatToMove and currentPos outside the function, as separate variables.  whatToMove.position will change with each iteration.
+            </summary>
+            <param name="whatToMove"></param>
+            <param name="currentPos"></param>
+            <param name="newPos"></param>
+            <param name="duration"></param>
+            <param name="counter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Permutations.Utilities.Core.RotateTransform(UnityEngine.Transform,UnityEngine.Quaternion,UnityEngine.Quaternion,System.Single,System.Single)">
+            <summary>
+            You must specify whatToMove and currentRot outside the function, as separate variables.  whatToMove.rotation will change with each iteration.
+            </summary>
+            <param name="currentRot"></param>
+            <param name="newRot"></param>
+            <param name="duration"></param>
+            <param name="counter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Permutations.Utilities.Core.Array3ToVector3(System.Single[])">
+            <summary>
+            Change float[3] to Vector[3]
+            </summary>
+            <param name="arrayToConvert"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Permutations.Utilities.Core.Vector3ToArray3(UnityEngine.Vector3)">
+            <summary>
+            change Vector3 to float[3]
+            </summary>
+            <param name="toChange"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
